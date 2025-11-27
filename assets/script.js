@@ -1,35 +1,25 @@
-// JQUERY READY
-
 $(document).ready(function() {
-  // Initialize all functionality
   initializeNavigation();
   initializeScrollEffect();
   initializeSlideshow();
-  initializeMobileMenu();
   initializeCourseModal();
   initializeContactForm();
   initializeLightbox();
 });
 
-// INITIALIZE NAVIGATION
-
 function initializeNavigation() {
   const currentPath = window.location.pathname;
   const pageName = currentPath.split('/').pop() || 'index.html';
 
-  $('.desktop-nav a, #mobile-menu a').each(function() {
+  $('.desktop-nav a').each(function() {
     const href = $(this).attr('href');
-    // Remove active class first
     $(this).removeClass('active');
     
-    // Add active class if href matches current page
     if (href === pageName) {
       $(this).addClass('active');
     }
   });
 }
-
-// INITIALIZE SCROLL EFFECT
 
 function initializeScrollEffect() {
   const $header = $('#main-header');
@@ -37,7 +27,6 @@ function initializeScrollEffect() {
   $(window).on('scroll', function() {
     const scrollTop = $(this).scrollTop();
     
-    // Only apply scroll effect if NOT on a page that forces solid header
     if (!$header.hasClass('header-solid')) {
       if (scrollTop > 50) {
         $header.addClass('scrolled');
@@ -47,8 +36,6 @@ function initializeScrollEffect() {
     }
   });
 }
-
-// SLIDESHOW INITIALIZATION
 
 function initializeSlideshow() {
   const $slideshowContainer = $('#slideshow-container');
@@ -82,35 +69,10 @@ function initializeSlideshow() {
     displaySlide(nextIndex);
   }
 
-  // Start slideshow auto-rotation
   setInterval(moveToNextSlide, slideIntervalTime);
 }
 
-// MOBILE MENU TOGGLE
-
-function initializeMobileMenu() {
-  const $menuButton = $('#mobile-menu-btn');
-  const $mobileMenu = $('#mobile-menu');
-
-  if ($menuButton.length === 0 || $mobileMenu.length === 0) {
-    return;
-  }
-
-  $menuButton.on('click', function(e) {
-    e.preventDefault();
-    $mobileMenu.toggleClass('active');
-  });
-
-  // Close menu when a link is clicked
-  $mobileMenu.find('a').on('click', function() {
-    $mobileMenu.removeClass('active');
-  });
-}
-
-// COURSE MODAL
-
 function initializeCourseModal() {
-  // 1. Inject Modal HTML if not exists
   if ($('#course-modal').length === 0) {
     const modalTemplate = `
       <div id="course-modal" class="course-modal" aria-hidden="true">
@@ -147,7 +109,6 @@ function initializeCourseModal() {
     $('body').append(modalTemplate);
   }
 
-  // 2. Define Modal Functions
   const $modal = $('#course-modal');
   const $image = $('#course-modal-image');
   const $title = $('#course-modal-title');
@@ -157,7 +118,6 @@ function initializeCourseModal() {
   const $duration = $('#course-modal-duration');
 
   window.openCourseModal = function(data) {
-    console.log('Opening modal with data:', data);
     $title.text(data.title || '');
     $description.text(data.description || '');
     $levelPill.text(data.level || '');
@@ -179,16 +139,12 @@ function initializeCourseModal() {
     $modal.attr('aria-hidden', 'true');
   };
 
-  // 3. Setup Event Listeners
-  // Use event delegation for dynamic elements
-  $(document).off('click', '.course-card'); // Prevent duplicate listeners
+  $(document).off('click', '.course-card');
   $(document).on('click', '.course-card', function(e) {
-    // Ignore click if it's on a button/link
     if ($(e.target).closest('a, button').length) {
       return;
     }
 
-    console.log('Course card clicked');
     const $card = $(this);
     
     const courseData = {
@@ -202,7 +158,6 @@ function initializeCourseModal() {
     window.openCourseModal(courseData);
   });
 
-  // Close handlers
   $(document).on('click', '.course-modal-close, .course-modal-backdrop', function() {
     window.closeCourseModal();
   });
@@ -213,8 +168,6 @@ function initializeCourseModal() {
     }
   });
 }
-
-// LIGHTBOX FOR GALLERY
 
 function initializeLightbox() {
   if ($('#lightbox-overlay').length === 0) {
@@ -265,10 +218,7 @@ function initializeLightbox() {
   });
 }
 
-// CONTACT FORM VALIDATION
-
 function initializeContactForm() {
-  // Contact form
   $(document).on('submit', '#contact-form', function(e) {
     e.preventDefault();
     const $form = $(this);
@@ -300,7 +250,6 @@ function initializeContactForm() {
     }
   });
 
-  // Enrollment form
   $(document).on('submit', '#enrollment-form', function(e) {
     e.preventDefault();
     const $form = $(this);
