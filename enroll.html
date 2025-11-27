@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Ký - PEC English Center</title>
+  <meta name="description" content="Đăng ký học tại PEC - PTIT English Center ngay hôm nay.">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="main-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <img src="assets/Logo/Logo-Hoc-Vien-Cong-Nghe-Buu-Chinh-Vien-Thong-PTITSimple.PNG" class="logo-image">
+          </div>
+          <span class="logo-text">PTIT English Center</span>
+        </a>
+
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="about.html">Giới Thiệu</a></li>
+            <li><a href="courses.html">Khóa Học</a></li>
+            <li><a href="activities.html">Hoạt Động</a></li>
+            <li><a href="contact.html">Liên Hệ</a></li>
+          </ul>
+          <a href="enroll.html" class="btn btn-primary active">Đăng Ký Ngay</a>
+        </nav>
+
+        <button id="mobile-menu-btn" type="button" aria-label="Open menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+      
+      <div id="mobile-menu">
+        <nav>
+          <a href="index.html">Trang Chủ</a>
+          <a href="about.html">Giới Thiệu</a>
+          <a href="courses.html">Khóa Học</a>
+          <a href="activities.html">Hoạt Động</a>
+          <a href="contact.html">Liên Hệ</a>
+          <a href="enroll.html" class="btn btn-primary" style="width: 100%; text-align: center;">Đăng Ký Ngay</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="light-bg section-offset">
+        <div class="section-container">
+          <div class="section-title text-center">
+            <h1>Đăng Ký Học Tại PEC</h1>
+            <p class="section-subtitle">
+              Bắt đầu hành trình chinh phục tiếng Anh cùng PEC. Điền thông tin bên dưới và chúng tôi sẽ liên hệ trong vòng 24h.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-container">
+          <div style="max-width: 800px; margin: 0 auto;">
+            <form id="enrollment-form" class="enrollment-form">
+              <h2 style="margin-bottom: 2rem; color: var(--primary);">Thông Tin Học Viên</h2>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullname">Họ và Tên *</label>
+                  <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="dob">Ngày Sinh</label>
+                  <input type="date" id="dob" name="dob">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email-enroll">Email *</label>
+                  <input type="email" id="email-enroll" name="email" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone-enroll">Số Điện Thoại *</label>
+                  <input type="tel" id="phone-enroll" name="phone" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="address">Địa Chỉ</label>
+                <input type="text" id="address" name="address" placeholder="Số nhà, đường, phường, quận">
+              </div>
+
+              <h2 style="margin: 2rem 0 1.5rem; color: var(--primary);">Thông Tin Khóa Học</h2>
+
+              <div class="form-group">
+                <label for="course-select">Khóa Học Muốn Đăng Ký *</label>
+                <select id="course-select" name="course" required>
+                  <option value="">-- Chọn khóa học --</option>
+                  <option value="general">General English</option>
+                  <option value="business">Business English</option>
+                  <option value="ielts">IELTS Preparation</option>
+                  <option value="pronunciation">Pronunciation & Accent</option>
+                  <option value="conversation">Conversation Club</option>
+                  <option value="it">English for IT Professionals</option>
+                </select>
+              </div>
+
+              <div class="formrow">
+                <div class="form-group">
+                  <label for="level">Trình Độ Hiện Tại</label>
+                  <select id="level" name="level">
+                    <option value="">-- Chọn trình độ --</option>
+                    <option value="beginner">Beginner (Mới bắt đầu)</option>
+                    <option value="elementary">Elementary (Cơ bản)</option>
+                    <option value="intermediate">Intermediate (Trung cấp)</option>
+                    <option value="upper-intermediate">Upper-Intermediate (Trung cấp cao)</option>
+                    <option value="advanced">Advanced (Nâng cao)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="start-date">Thời Gian Muốn Bắt Đầu</label>
+                  <input type="date" id="start-date" name="start-date">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="schedule">Lịch Học Ưu Tiên</label>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem; font-size: 0.9rem;">
+                  <label style="display: flex; align-items: center; gap: 0.3rem; cursor: pointer; white-space: nowrap;">
+                    <input type="checkbox" name="schedule" value="weekday-morning" style="width: auto;"> Sáng T2-T6
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.3rem; cursor: pointer; white-space: nowrap;">
+                    <input type="checkbox" name="schedule" value="weekday-afternoon" style="width: auto;"> Chiều T2-T6
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.3rem; cursor: pointer; white-space: nowrap;">
+                    <input type="checkbox" name="schedule" value="weekday-evening" style="width: auto;"> Tối T2-T6
+                  </label>
+                  <label style="display: flex; align-items: center; gap: 0.3rem; cursor: pointer; white-space: nowrap;">
+                    <input type="checkbox" name="schedule" value="weekend" style="width: auto;"> Cuối tuần
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="note">Ghi Chú / Yêu Cầu Đặc Biệt</label>
+                <textarea id="note" name="note" rows="4" placeholder="Ví dụ: Muốn học 1-1, có nền tảng IELTS 6.0, v.v."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                  <input type="checkbox" name="terms" required style="width: 1rem; height: 1rem;">
+                  <span>Tôi đồng ý với <a href="#" style="color: var(--primary); text-decoration: underline;">điều khoản và điều kiện</a> của PEC *</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" style="margin-top: 2rem; padding: 1rem;">
+                Gửi Đăng Ký
+                <span class="material-symbols-outlined" style="vertical-align: middle;">send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="light-bg">
+        <div class="section-container">
+          <div class="section-title text-center">
+            <h2>Sau Khi Đăng Ký</h2>
+            <p class="section-subtitle">Quy trình tiếp theo diễn ra như thế nào?</p>
+          </div>
+
+          <div class="grid grid-3" style="margin-top: 3rem;">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">call</span>
+              </div>
+              <h3 class="feature-title">1. Liên Hệ Xác Nhận</h3>
+              <p class="feature-text">Chúng tôi sẽ gọi điện xác nhận thông tin và tư vấn chi tiết trong vòng 24h.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">quiz</span>
+              </div>
+              <h3 class="feature-title">2. Kiểm Tra Đầu Vào</h3>
+              <p class="feature-text">Làm bài test online hoặc trực tiếp để xác định trình độ chính xác.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">check_circle</span>
+              </div>
+              <h3 class="feature-title">3. Bắt Đầu Học</h3>
+              <p class="feature-text">Nhận lịch học, tài liệu và bắt đầu lớp học đầu tiên!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section section-container mt-4">
+        <div class="cta-content">
+          <h2>Cần Hỗ Trợ?</h2>
+          <p>Liên hệ trực tiếp với chúng tôi qua hotline hoặc email nếu bạn có thắc mắc.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-white">Liên Hệ Ngay</a>
+            <a href="courses.html" class="btn btn-secondary">Xem Khóa Học</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <a href="index.html" class="footer-logo">
+              <span class="material-symbols-outlined">language</span>
+              <span>PEC</span>
+            </a>
+            <p class="footer-text">PEC - PTIT English Center - Trung tâm tiếng Anh hàng đầu tại TP.HCM, chuyên đào tạo IELTS, SAT, Tiếng Anh Giao Tiếp và Tiếng Anh Thương Mại với đội ngũ giảng viên bản ngữ giàu kinh nghiệm.</p>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Liên Hệ</h3>
+            <ul>
+              <li><span class="material-symbols-outlined" style="font-size: 18px; vertical-align: middle; margin-right: 0.5rem;">location_on</span> 97 Đường Man Thiện, P. Tăng Nhơn Phú, TP.HCM</li>
+              <li><span class="material-symbols-outlined" style="font-size: 18px; vertical-align: middle; margin-right: 0.5rem;">call</span> (028) 3829 5258</li>
+              <li><span class="material-symbols-outlined" style="font-size: 18px; vertical-align: middle; margin-right: 0.5rem;">mail</span> contact@pec-ptit.edu.vn</li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Liên Kết</h3>
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="about.html">Giới Thiệu</a></li>
+              <li><a href="courses.html">Khóa Học</a></li>
+              <li><a href="activities.html">Hoạt Động</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+              <li><a href="enroll.html">Đăng Ký</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Theo Dõi</h3>
+            <div class="social-links">
+              <a class="social-icon" href="https://www.facebook.com/ptithochiminh" aria-label="Facebook">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.323-1.325z"></path></svg>
+              </a>
+              <a class="social-icon" href="https://www.facebook.com/ptithochiminh" aria-label="Instagram">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44c0-.795-.645-1.44-1.441-1.44z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 PEC - PTIT English Center. Bản quyền đã được bảo hộ.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>

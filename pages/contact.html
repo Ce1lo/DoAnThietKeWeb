@@ -1,0 +1,69 @@
+<!-- CONTACT PAGE CONTENT -->
+<div id="page-contact">
+  <section class="light-bg section-offset">
+    <div class="section-container">
+      <div class="section-title">
+        <h1>Liên Hệ</h1>
+        <p class="section-subtitle">
+          Câu hỏi về khóa học, lịch học hay tuyển sinh? Gửi tin nhắn cho PEC và chúng tôi sẽ phản hồi trong vòng một ngày làm việc.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3 class="card-title">Gửi Tin Nhắn Cho Chúng Tôi</h3>
+          <p class="card-text">Điền vào biểu mẫu và chúng tôi sẽ liên hệ lại với thông tin phù hợp cho bạn.</p>
+          <form id="contact-form" style="display: flex; flex-direction: column; gap: 1rem;">
+            <div>
+              <label for="contact-name" style="display: block; font-weight: 700; margin-bottom: 0.35rem;">Họ và Tên</label>
+              <input id="contact-name" name="name" type="text" class="form-control" placeholder="Tên của bạn" required>
+              <div class="form-error-message" data-error-for="contact-name"></div>
+            </div>
+
+            <div>
+              <label for="contact-email" style="display: block; font-weight: 700; margin-bottom: 0.35rem;">Email</label>
+              <input id="contact-email" name="email" type="email" class="form-control" placeholder="ban@email.com" required>
+              <div class="form-error-message" data-error-for="contact-email"></div>
+            </div>
+
+            <div>
+              <label for="contact-phone" style="display: block; font-weight: 700; margin-bottom: 0.35rem;">Số Điện Thoại</label>
+              <input id="contact-phone" name="phone" type="tel" class="form-control" placeholder="(+84) 123 456 789">
+            </div>
+
+            <div>
+              <label for="contact-message" style="display: block; font-weight: 700; margin-bottom: 0.35rem;">Tin Nhắn</label>
+              <textarea id="contact-message" name="message" rows="4" class="form-control" placeholder="Chúng tôi có thể giúp gì cho bạn?" required></textarea>
+              <div class="form-error-message" data-error-for="contact-message"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: fit-content;">Gửi Tin Nhắn</button>
+          </form>
+        </div>
+
+        <div class="contact-card">
+          <h3 class="card-title">Địa Chỉ & Kết Nối</h3>
+          <p class="card-text" style="margin-bottom: 1rem;">
+            PEC - PTIT English Center<br>
+            97 Đường Man Thiện, P. Tăng Nhơn Phú, TP.HCM
+          </p>
+          <div class="contact-socials">
+            <a class="social-pill" href="#" aria-label="Facebook">
+              <span class="material-symbols-outlined">facebook</span> Facebook
+            </a>
+            <a class="social-pill" href="#" aria-label="Instagram">
+              <span class="material-symbols-outlined">camera_alt</span> Instagram
+            </a>
+            <a class="social-pill" href="#" aria-label="LinkedIn">
+              <span class="material-symbols-outlined">work</span> LinkedIn
+            </a>
+          </div>
+
+          <div style="margin-top: 1.25rem;">
+            <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.4773291002127!2d106.78708796541315!3d10.84760187386047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752772b245dff1%3A0xb838977f3d419d!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IENox61uaCBWaeG7hW4gVGjDtG5nIGPGoSBz4bufIHThuqFpIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1760689897001!5m2!1svi!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

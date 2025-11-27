@@ -1,0 +1,106 @@
+<!-- ENROLL PAGE CONTENT -->
+<div id="page-enroll">
+  <section class="light-bg section-offset">
+    <div class="section-container">
+      <div class="section-title">
+        <h1>Đăng Ký & Bắt Đầu</h1>
+        <p class="section-subtitle">
+          Cho chúng tôi biết về mục tiêu và lịch trình của bạn. Chúng tôi sẽ kết nối bạn với khóa học và giảng viên phù hợp.
+        </p>
+      </div>
+
+      <div class="grid grid-2" style="align-items: start; gap: 2.5rem;">
+        <!-- Enroll Form -->
+        <div class="card" style="padding: 1.75rem;">
+          <h3 class="card-title">Thông Tin Của Bạn</h3>
+          <p class="card-text">Chia sẻ thông tin và sở thích của bạn—đội ngũ của chúng tôi sẽ liên hệ trong vòng một ngày làm việc.</p>
+
+          <form class="enroll-form" style="display: flex; flex-direction: column; gap: 1rem;">
+            <div>
+              <label for="name" style="display: block; font-weight: 700; margin-bottom: 0.35rem;">Họ và Tên</label>
+              <input id="name" name="name" type="text" placeholder="Tên của bạn" required style="width: 100%; padding: 0.8rem 1rem; border-radius: 0.75rem; border: 1px solid var(--border-light); font-family: inherit;">
+            </div>
+
+            <div>
+              <label for="email" style="display: block; font-weight: 700; margin-bottom: 0.35rem;">Email</label>
+              <input id="email" name="email" type="email" placeholder="ban@email.com" required style="width: 100%; padding: 0.8rem 1rem; border-radius: 0.75rem; border: 1px solid var(--border-light); font-family: inherit;">
+            </div>
+
+            <div>
+              <label for="phone" style="display: block; font-weight: 700; margin-bottom: 0.35rem;">Số Điện Thoại</label>
+              <input id="phone" name="phone" type="tel" placeholder="(+84) 123 456 789" style="width: 100%; padding: 0.8rem 1rem; border-radius: 0.75rem; border: 1px solid var(--border-light); font-family: inherit;">
+            </div>
+
+            <div>
+              <label for="course" style="display: block; font-weight: 700; margin-bottom: 0.35rem;">Khóa Học Quan Tâm</label>
+              <select id="course" name="course" style="width: 100%; padding: 0.8rem 1rem; border-radius: 0.75rem; border: 1px solid var(--border-light); font-family: inherit;">
+                <option>Tiếng Anh Tổng Quát</option>
+                <option>Tiếng Anh Thương Mại</option>
+                <option>Luyện Thi IELTS</option>
+                <option>Phát Âm & Giọng</option>
+                <option>Câu Lạc Bộ Hội Thoại</option>
+                <option>Tiếng Anh Cho Ngành Công Nghệ</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="schedule" style="display: block; font-weight: 700; margin-bottom: 0.35rem;">Lịch Trình Ưu Tiên</label>
+              <select id="schedule" name="schedule" style="width: 100%; padding: 0.8rem 1rem; border-radius: 0.75rem; border: 1px solid var(--border-light); font-family: inherit;">
+                <option>Sáng các ngày trong tuần</option>
+                <option>Tối các ngày trong tuần</option>
+                <option>Cuối tuần</option>
+                <option>Linh hoạt</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" style="display: block; font-weight: 700; margin-bottom: 0.35rem;">Mục Tiêu / Ghi Chú</label>
+              <textarea id="message" name="message" rows="4" placeholder="Cho chúng tôi biết về mục tiêu của bạn..." style="width: 100%; padding: 0.8rem 1rem; border-radius: 0.75rem; border: 1px solid var(--border-light); font-family: inherit;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: fit-content;">Gửi Đăng Ký</button>
+          </form>
+        </div>
+
+        <!-- Info Column -->
+        <div class="card" style="padding: 1.75rem;">
+          <h3 class="card-title">Tại Sao Đăng Ký Với Chúng Tôi?</h3>
+          <ul style="list-style: none; padding: 0; margin: 1rem 0 1.5rem; display: grid; gap: 0.75rem;">
+            <li style="display: flex; gap: 0.75rem;">
+              <span class="material-symbols-outlined" style="color: var(--primary);">check_circle</span>
+              <div>
+                <strong>Giảng viên chuyên nghiệp</strong>
+                <p class="card-text" style="margin-bottom: 0;">Giáo viên được chứng nhận với kinh nghiệm thực tế.</p>
+              </div>
+            </li>
+            <li style="display: flex; gap: 0.75rem;">
+              <span class="material-symbols-outlined" style="color: var(--primary);">schedule</span>
+              <div>
+                <strong>Lịch trình linh hoạt</strong>
+                <p class="card-text" style="margin-bottom: 0;">Lựa chọn trong tuần, cuối tuần và trực tuyến.</p>
+              </div>
+            </li>
+            <li style="display: flex; gap: 0.75rem;">
+              <span class="material-symbols-outlined" style="color: var(--primary);">workspace_premium</span>
+              <div>
+                <strong>Kết quả được chứng minh</strong>
+                <p class="card-text" style="margin-bottom: 0;">Sự hài lòng cao và cải thiện điểm số mạnh mẽ.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="cta-section" style="margin: 0; max-width: none;">
+            <div class="cta-content">
+              <h2>Cần Tư Vấn?</h2>
+              <p>Đặt cuộc gọi 15 phút để nhận lộ trình học tập được cá nhân hóa.</p>
+              <div class="cta-buttons">
+                <button class="btn btn-white">Đặt Lịch Gọi</button>
+                <button class="btn btn-secondary">Chat Ngay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
